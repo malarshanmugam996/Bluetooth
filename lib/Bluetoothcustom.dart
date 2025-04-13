@@ -38,7 +38,7 @@ class BluetoothCustomDevice {
     });
     return scanResults;
   }
-  scanForPeripheralswithserviceid(List<Guid>ServicesGuid ) async {
+ Future< List<BluetoothDevice>> scanForPeripheralswithserviceid(List<Guid>ServicesGuid ) async {
     try {
      // const String heartRateServiceUuid = "180f";
      // const String deviceInformationServiceUuid = "1800";
